@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .row{
+            height: 400px;
+            margin-bottom: 5px;
+        }
+        .row-second{
+            display: flex;
+            gap: 5px;
+        }
+        .row-second > div{
+            flex: 1;
+            
+        }
+        .row-second-fast img{
+            height: 198px;
+        }
+        .third-row{
+            display: flex;
+            gap: 5px;
+
+        }
+        .third-row div{
+            flex: 1;
+        }
+        .anis{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Image Decoration</h2>
+        <hr>
+    </header>
+    <main>
+        <section class="row">
+            <img src="images/A.jpg" alt="">
+        </section>
+        <section class="row row-second">
+            <div><img src="images/B.jpg" alt=""></div>
+            <div><img src="images/C.jpg" alt=""></div>
+            <div class="row-second-fast">
+                <div>
+                    <img src="images/D.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/E.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="row third-row">
+            <div><img src="images/F.jpg" alt=""></div>
+            <div class="anis">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+            </div>
+            <div><img src="images/I.jpg" alt=""></div>
+        </section>
+    </main>
+</body>
+</html>
