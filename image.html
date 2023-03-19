@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image processing</title>
+    <style>
+        img{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .row{
+            margin-bottom: 5px;
+        }
+        .row-fast{
+            display: flex;
+            gap: 5px;
+        }
+        .row-second{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .row-fast div{
+            flex: 1;
+            gap: 5px;
+        }
+        
+        .row-third{
+            display: flex;
+            gap: 5px;
+        }
+        .row-third div{
+            flex:1;
+        }
+        .row-third-row{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+        }
+        @media screen and (max-width: 576px) {
+            .row-fast{
+                display: grid;
+                flex-direction: column;
+            }
+            .row-second{
+                display: grid;
+                flex-direction: column;
+            }
+            .row-third{
+                display: grid;
+                flex-direction: column;
+            }
+            .row-third-row{
+                display: grid;
+                flex-direction: column;
+            }
+            .row-third-row{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 5px;
+         }
+            
+        }
+        @media screen and (min-width: 577px){
+            .row{
+                height: 400px;
+            }
+            .row-second img{
+            height: 197.5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Image processing</h1>
+    </header>
+    <main>
+        <!-- fast row -->
+        <section class="row">
+            <img src="images/A.jpg" alt="">
+        </section>
+        <!-- second row -->
+        <section class="row row-fast">
+            <div>
+                <img src="images/B.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/C.jpg" alt="">
+            </div>
+            <div class="row-second">
+                <img src="images/D.jpg" alt="">
+                <img src="images/E.jpg" alt="">
+            </div>
+            <!-- Third -->
+        </section>
+            
+        <section class="row row-third">
+            <div>
+                <img src="images/F.jpg" alt="">
+            </div>
+            <div class="row-third-row">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/I.jpg" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
